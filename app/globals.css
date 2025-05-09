@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+body {
+  background-color: #f0eded;
+}
+
+.animate-slide-left {
+  animation: slide-left 60s linear infinite; /* Durasi diperlambat menjadi 60 detik */
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
